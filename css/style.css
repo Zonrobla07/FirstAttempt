@@ -1,0 +1,66 @@
+/* Reset básico para asegurar consistencia en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo principal de la aplicación */
+body {
+    background-color: #f4f6f9; /* Un gris muy claro para contrastar con los menús */
+    color: #333;
+}
+
+/* Estilos de la barra de navegación (Header) */
+.navbar {
+    background-color: #1f4ca6; /* Azul oscuro principal */
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ligera sombra para separar del fondo */
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto Hover y acentos usando el azul medio */
+.nav-links li a:hover {
+    background-color: #5B8DEF; 
+}
+
+/* Contenedor central para los módulos */
+.main-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
